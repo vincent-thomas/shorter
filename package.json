@@ -1,24 +1,31 @@
 {
-  "name": "shorter",
-  "version": "0.1.0",
   "private": true,
+  "sideEffects": false,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "remix build",
+    "dev": "dotenv -c local remix dev"
   },
   "dependencies": {
-    "next": "12.2.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "@remix-run/node": "^1.6.5",
+    "@remix-run/react": "^1.6.5",
+    "@remix-run/vercel": "^1.6.5",
+    "@vercel/node": "^2.4.4",
+    "nanoid": "^4.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "redis-om": "^0.3.6"
   },
   "devDependencies": {
-    "@types/node": "18.0.6",
-    "@types/react": "18.0.15",
-    "@types/react-dom": "18.0.6",
-    "eslint": "8.20.0",
-    "eslint-config-next": "12.2.3",
-    "typescript": "4.7.4"
+    "@remix-run/dev": "^1.6.5",
+    "@remix-run/eslint-config": "^1.6.5",
+    "@remix-run/serve": "^1.6.5",
+    "@types/react": "^17.0.47",
+    "@types/react-dom": "^17.0.17",
+    "dotenv-cli": "^6.0.0",
+    "eslint": "^8.20.0",
+    "typescript": "^4.7.4"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }
